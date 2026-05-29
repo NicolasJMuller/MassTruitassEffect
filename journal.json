@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "titre": "Défaillance capteur thermique module 3",
+        "date": "2079-05-30",
+        "heure": "23h47",
+        "nature": "Technique",
+        "gravite": "faible",
+        "statut": "en cours",
+        "avancement": 7,
+        "avancement_max": 10,
+        "description": "Défaillance du capteur thermique du module 3 détectée lors du diagnostic quotidien. Le capteur étant redondant, l'impact sur la mission est négligeable. La réparation est estimée à 4 heures. Les spécialistes Wong et Davis prennent en charge l'intervention."
+    }
+]

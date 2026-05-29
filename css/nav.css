@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --color-bg: #000;
+    --color-text: #fff;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pridi', cursive;
+    color: var(--color-text);
+}
+
+p, a {
+    font-family: 'Mirza', cursive;
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV DESKTOP */
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.nav-gauche {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-droite {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+}
+
+nav img {
+    width: 80px;
+    display: block;
+}
+
+/* BURGER */
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-mobile {
+    display: none;
+}
+
+/* NAV MOBILE */
+@media (max-width: 768px) {
+    nav {
+        grid-template-columns: 1fr auto;
+    }
+
+    .nav-gauche, .nav-droite {
+        display: none;
+    }
+
+    .nav-centre {
+        justify-content: flex-start;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 20px 0;
+        grid-column: 1 / -1;
+    }
+
+    .nav-mobile.actif {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    nav img {
+        width: 60px;
+    }
+}

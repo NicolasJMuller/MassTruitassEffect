@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Muller">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/journal.css">
+    <title>Journal de bord</title>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-gauche">
+        <a href="aPropos.html">À propos</a>
+    </div>
+    <div class="nav-centre">
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+    </div>
+    <div class="nav-droite">
+        <a href="journal.html">Journal de bord</a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <div class="nav-mobile" id="navLiens">
+        <a href="aPropos.html">À propos</a>
+        <a href="journal.html">Journal de bord</a>
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLiens').classList.toggle('actif');
+    }
+</script>
+
+<main id="journal"></main>
+
+    <footer>
+        <p>© 2079 Mass Truitass Effect — Cellule de communication du Centre de Contrôle Aurora. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLiens').classList.toggle('actif');
+        }
+
+        function genererJauge(avancement, max) {
+            let barres = '';
+            for (let i = 0; i < max; i++) {
+                if (i < avancement) {
+                    barres += `<div class="barre pleine"></div>`;
+                } else {
+                    barres += `<div class="barre vide"></div>`;
+                }
+            }
+            return barres;
+        }
+
+        fetch('journal.json')
+            .then(r => r.json())
+            .then(entrees => {
+                const journal = document.getElementById('journal');
+                entrees.forEach((entree, index) => {
+                    journal.innerHTML += `
+                        <article>
+                            <div class="article-header">
+                                <h2>${entree.titre}</h2>
+                                <span class="meta">${entree.date} | ${entree.heure}</span>
+                            </div>
+                            <div class="article-infos">
+                                <span>Nature : ${entree.nature}</span>
+                                <span>Gravité : ${entree.gravite}</span>
+                                <span>Statut : ${entree.statut}</span>
+                            </div>
+                            <p class="description">${entree.description}</p>
+                            <div class="jauge-label">Résolution : ${entree.avancement}/${entree.avancement_max}</div>
+                            <div class="jauge">
+                                ${genererJauge(entree.avancement, entree.avancement_max)}
+                            </div>
+                        </article>
+                        ${index < entrees.length - 1 ? '<hr>' : ''}
+                    `;
+                });
+            });
+    </script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>

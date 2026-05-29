@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicolas Muller">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Page d'accueil Mass Truitass Effect </title>
+
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-gauche">
+        <a href="aPropos.html">À propos</a>
+    </div>
+    <div class="nav-centre">
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+    </div>
+    <div class="nav-droite">
+        <a href="journal.html">Journal de bord</a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <div class="nav-mobile" id="navLiens">
+        <a href="aPropos.html">À propos</a>
+        <a href="journal.html">Journal de bord</a>
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLiens').classList.toggle('actif');
+    }
+</script>
+
+    <header>
+        <h1>Mass Truitass Effect </h1>
+        <H2>Projet Aurora</H2>
+    </header>
+    <div class="hero">
+
+        <div class="heroImg">
+            <figure class><img src="medias/decollage.png" alt=""></figure>
+        </div>
+        <div class="heroTxt">
+            <p>
+                2047. Des télescopes de nouvelle génération détectent des signatures
+                atmosphériques inexpliquées sur Kepler-452c, une planète rocheuse à
+                1 400 années-lumière de la Terre. Une découverte qui allait changer
+                l'histoire de l'humanité.
+            </p>
+            <p>
+                Dix ans plus tard, l'Agence Spatiale Internationale lance le programme
+                Aurora : concevoir et construire le premier vaisseau interstellaire habité.
+                Un budget de 2 000 milliards de crédits. Un objectif : atteindre Kepler-452c.
+            </p>
+            <p>
+                2077. L'Odyssey IV quitte l'orbite terrestre sous les yeux de 8 milliards
+                de témoins. À son bord, six astronautes sélectionnés parmi 12 000 candidats,
+                porteurs de l'espoir de toute une espèce.
+            </p>
+            <p>
+                Aujourd'hui, en 2079, l'Odyssey IV est en orbite autour de Kepler-452c.
+                Nous attendons les premières images de la surface. Le monde retient son souffle.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2079 Mass Truitass Effect tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

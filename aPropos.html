@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Muller">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/aPropos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>A propos MTE</title>
+</head>
+
+<body>
+    <nav>
+    <div class="nav-gauche">
+        <a href="aPropos.html">À propos</a>
+    </div>
+    <div class="nav-centre">
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+    </div>
+    <div class="nav-droite">
+        <a href="journal.html">Journal de bord</a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <div class="nav-mobile" id="navLiens">
+        <a href="aPropos.html">À propos</a>
+        <a href="journal.html">Journal de bord</a>
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLiens').classList.toggle('actif');
+    }
+</script>
+
+
+
+
+    <header>
+        <h1>L'équipe de Mass Truitass Effect</h1>
+    </header>
+
+
+    <figure class="bg-img"><img src="medias/MTE.png" alt=""></figure>
+    <div class="equipe">
+
+        <div class="membre">
+            <img src="medias/apolline.png" alt="Apolline DA SILVA">
+            <div>
+                <h3>Apolline DA SILVA | 26 ans</h3>
+                <p>
+                    Créative, sensible et toujours un peu inquiète et c'est précisément
+                    ce qui fait sa force. Apolline est l'âme artistique de la cellule.
+                    Son souci sincère pour l'équipage de l'Odyssey IV nourrit chaque
+                    création : elle transforme une donnée scientifique froide en quelque
+                    chose qui touche, qui émeut, qui donne envie de regarder les étoiles.
+                </p>
+            </div>
+        </div>
+
+        <div class="membre">
+            <img src="medias/lila.png" alt="Lila BRANJON">
+            <div>
+                <h3>Lila BRANJON | 25 ans</h3>
+                <p>
+                    Lila, c'est l'optimisme à l'état pur. Engagée pour la planète,
+                    passionnée de 3D, elle a forgé son talent auprès d'un certain Marin,
+                    expert dont le nom s'est perdu mais dont l'héritage est bien vivant
+                    dans chacune de ses créations. Elle croit que cette mission peut
+                    changer notre rapport au monde et elle met tout son talent pour
+                    que vous le croyiez aussi.
+                </p>
+            </div>
+        </div>
+
+        <div class="membre">
+            <img src="medias/nicolas.png" alt="Nicolas MULLER">
+            <div>
+                <h3>Nicolas MULLER | 31 ans</h3>
+                <p>
+                    Geek assumé et cuisinier de l'équipe, Nicolas est celui qui fait
+                    tourner la machine dans l'ombre. Il gère le site, le code, et
+                    s'occupe du confort de chacun des membres de l'équipe, tout en maniant le web d'une main de maitre.
+                </p>
+            </div>
+        </div>
+
+        <div class="membre">
+            <img src="medias/robin.png" alt="Robin DESAGA">
+            <div>
+                <h3>Robin DESAGA | 24 ans</h3>
+                <p>
+                    Robin est le mordu de vidéo. Il passe son temps une caméra à la main,
+                    un ordinateur dans l'autre, et produit des images et des vidéos d'une
+                    qualité exceptionnelle, capables de faire ressentir des émotions à chaque
+                    image. Il est l'expert technique de l'agence Mass Truitass Effect.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2079 Mass Truitass Effect tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
