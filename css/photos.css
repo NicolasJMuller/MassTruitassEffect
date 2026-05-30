@@ -5,6 +5,9 @@
     padding: 40px;
 }
 
+header {
+    text-align: center;
+}
 .carte {
     display: flex;
     flex-direction: column;

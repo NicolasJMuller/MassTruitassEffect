@@ -1,0 +1,83 @@
+/* Static overlay */
+body.mode-degrade::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E");
+    opacity: 0.35;
+    animation: static 0.3s steps(3) infinite;
+}
+
+
+
+/* Scan lines */
+body.mode-degrade::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.15) 2px,
+        rgba(0, 0, 0, 0.15) 4px
+    );
+}
+
+/* Animation static */
+@keyframes static {
+    0%   { transform: translateX(0) translateY(0); opacity: 0.35; }
+    20%  { transform: translateX(-3px) translateY(1px); opacity: 0.4; }
+    40%  { transform: translateX(3px) translateY(-2px); opacity: 0.25; }
+    60%  { transform: translateX(-2px) translateY(2px); opacity: 0.38; }
+    80%  { transform: translateX(2px) translateY(-1px); opacity: 0.3; }
+    100% { transform: translateX(0) translateY(0); opacity: 0.35; }
+}
+/* Glitch sur les titres */
+body.mode-degrade h1,
+body.mode-degrade h2 {
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0%   { transform: translate(0); }
+    92%  { transform: translate(0); }
+    93%  { transform: translate(-3px, 1px); clip-path: inset(10% 0 80% 0); }
+    94%  { transform: translate(3px, -1px); clip-path: inset(60% 0 20% 0); }
+    95%  { transform: translate(0); clip-path: none; }
+    97%  { transform: translate(-2px, 0); }
+    98%  { transform: translate(2px, 0); }
+    100% { transform: translate(0); }
+}
+
+/* Bandeau */
+.bandeau-alerte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8b0000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    z-index: 9999;
+    animation: clignoter 2s infinite;
+    letter-spacing: 2px;
+}
+
+@keyframes clignoter {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.6; }
+    100% { opacity: 1; }
+}
