@@ -1,0 +1,103 @@
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 40px;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #111;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carte h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: unset;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carte img:hover {
+    transform: scale(1.01);
+}
+
+.carte .legende {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.carte .date {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+
+
+/* lightbox */
+.carte {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1000;
+}
+
+.lightbox.actif {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.lightbox p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.lightbox-fermer {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+/* media query */
+@media (max-width: 768px) {
+    .galerie {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+
+    }
+}

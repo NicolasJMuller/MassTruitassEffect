@@ -6,67 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nicolas Muller">
     <link rel="icon" type="image/png" href="medias/logoNav.png">
-
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/photos.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Galerie — Mass Truitass Effect</title>
+    <title>Galerie Mass Truitass Effect</title>
 </head>
 
 <body>
+<nav>
+    <div class="nav-gauche">
+        <a href="aPropos.html">À propos</a>
+        <a href="equipage.html">L'équipage</a>
+    </div>
+    <div class="nav-centre">
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+    </div>
+    <div class="nav-droite">
+        <a href="journal.html">Journal de bord</a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <div class="nav-mobile" id="navLiens">
+        <a href="aPropos.html">À propos</a>
+        <a href="equipage.html">L'équipage</a>
 
-    <nav>
-        <div class="nav-gauche">
-            <a href="aPropos.html">À propos</a>
-        </div>
-        <div class="nav-centre">
-            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-        </div>
-        <div class="nav-droite">
-            <a href="journal.html">Journal de bord</a>
-            <a href="photos.html">Galerie photos</a>
-        </div>
-        <button class="burger" onclick="toggleMenu()">☰</button>
-        <div class="nav-mobile" id="navLiens">
-            <a href="aPropos.html">À propos</a>
-            <a href="journal.html">Journal de bord</a>
-            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-            <a href="photos.html">Galerie photos</a>
-        </div>
-    </nav>
+        <a href="journal.html">Journal de bord</a>
+        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        <a href="photos.html">Galerie photos</a>
+    </div>
+</nav>
+
+    <div class="galerie" id="galerie"></div>
+
+    <div class="lightbox" id="lightbox" onclick="fermerLightbox()">
+        <span class="lightbox-fermer">✕</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-titre"></p>
+    </div>
+
+    <footer>
+        <p>© 2079 Mass Truitass Effect — Cellule de communication du Centre de Contrôle Aurora. Tous droits réservés.</p>
+    </footer>
 
     <script>
         function toggleMenu() {
             document.getElementById('navLiens').classList.toggle('actif');
         }
-    </script>
 
+        function ouvrirLightbox(src, titre) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-titre').textContent = titre;
+            document.getElementById('lightbox').classList.add('actif');
+        }
 
-    <div class="galerie" id="galerie"></div>
+        function fermerLightbox() {
+            document.getElementById('lightbox').classList.remove('actif');
+        }
 
-    <footer>
-        <p>© 2079 Mass Truitass Effect — Cellule de communication du Centre de Contrôle Aurora. Tous droits réservés.
-        </p>
-    </footer>
-
-    <script>
         fetch('photos.json')
             .then(response => response.json())
             .then(photos => {
                 const galerie = document.getElementById('galerie');
                 photos.forEach(photo => {
-                    galerie.innerHTML += `
-                        <div class="carte">
-                            <h3>${photo.titre}</h3>
-                            <img src="${photo.fichier}" alt="${photo.titre}">
-                            <p class="legende">${photo.legende_1}</p>
-                            <p class="date">${photo.date} | ${photo.heure}</p>
-                        </div>
+                    const carte = document.createElement('div');
+                    carte.classList.add('carte');
+                    carte.innerHTML = `
+                        <h3>${photo.titre}</h3>
+                        <img src="${photo.fichier}" alt="${photo.titre}">
+                        <p class="legende">${photo.legende_1}</p>
+                        <p class="date">${photo.date} | ${photo.heure}</p>
                     `;
+                    carte.addEventListener('click', () => ouvrirLightbox(photo.fichier, photo.titre));
+                    galerie.appendChild(carte);
                 });
             });
     </script>
 
 </body>
-
 </html>
