@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+}
+
+#radar {
+    width: 100vh;
+}
+
+.radar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#radar-img {
+    display: block;
+    width: 600px;
+}
+
+#radar-canvas {
+    position: absolute;
+    top: 0;
+    left: 50% - 600px;
+    width: 600px;
+    height: 572px;
+}
+
+@media (max-width: 768px) {
+    #radar-img {
+        width: 90vw;
+    }
+
+    #radar-canvas {
+        width: 90vw;
+        height: calc(90vw * 0.953);
+    }
+}
+
+@media (max-width: 480px) {
+    #radar-img {
+        width: 95vw;
+    }
+
+    #radar-canvas {
+        width: 95vw;
+        height: calc(95vw * 0.953);
+    }
+}

@@ -65,6 +65,50 @@ nav img {
     display: block;
 }
 
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-family: 'Mirza', cursive;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    border-radius: 8px;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    font-size: 1em;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #222;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
 /* BURGER */
 .burger {
     display: none;
@@ -75,6 +119,7 @@ nav img {
     cursor: pointer;
     padding: 10px;
 }
+
 .nav-mobile {
     display: none;
 }
@@ -117,5 +162,15 @@ nav img {
 
     nav img {
         width: 60px;
+    }
+
+    .dropdown-btn {
+        font-size: 1.2em;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: transparent;
+        border-radius: 0;
     }
 }
