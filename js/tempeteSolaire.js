@@ -1,5 +1,5 @@
 // true = activé l'effet tempete solaire / false = désactivé l'effet tempete solaire
-const modeDegradé = true;
+const modeDegradé = false;
 
 if (modeDegradé) {
     // Ajoute la classe sur le body
