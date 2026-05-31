@@ -1,0 +1,76 @@
+{
+    "evenements": [
+        {
+            "id": 1,
+            "date": "24/02/2077",
+            "titre": "Annonce officiel du vaisceau",
+            "soustitre": "L'Odyssey IV est révélé au public",
+            "texte": "<p>Le 12 mars 2071, après treize ans de construction en orbite terrestre basse, l'Odyssey IV a été présenté au monde pour la première fois. Trois cent quarante mètres de long, quatre-vingt-douze mètres de largeur maximale, et un poids total à vide de 847 000 tonnes. Les chiffres donnent le vertige. La réalité, captée par les caméras de l'ASI, dépasse l'entendement.</p><p>Le vaisseau embarque une propulsion ionique de quatrième génération, capable de maintenir une accélération constante sur des durées que aucun système précédent n'avait pu atteindre. Son bouclier anti-radiations, développé sur quinze ans par un consortium de vingt-deux nations, représente à lui seul l'investissement technologique le plus important de l'histoire spatiale humaine. Les six modules de vie, disposés en anneau rotatif, génèrent une gravité artificielle équivalente à 0,8 g — suffisante pour préserver la masse osseuse et musculaire de l'équipage sur la durée du voyage.</p><p>Ce jour-là, huit milliards de personnes ont regardé les images de l'Odyssey IV dériver silencieusement au-dessus de la Terre. Beaucoup ont pleuré. Personne n'a vraiment pu expliquer pourquoi. Peut-être parce que, pour la première fois, l'humanité voyait de ses propres yeux qu'elle était capable de faire quelque chose de grand.</p>",
+            "image": "medias/chrono/vaisceau.png"
+        },
+        {
+            "id": 2,
+            "date": "29/03/2079 06h11",
+            "titre": "Kepler-452c en vue",
+            "soustitre": "Arriver en orbite de Kepler-452c",
+            "texte": "<p>Après dix-huit mois de voyage dans le silence de l'espace interstellaire, l'Odyssey IV est entré en orbite stable autour de Kepler-452c le 29 mai 2079 à 06h11. Une manœuvre d'une précision remarquable, exécutée par le Lieutenant Laurent sous la supervision de la Commandante Ripley, après des mois de calculs et de corrections de trajectoire minutieuses.</p><p>À bord, l'équipage retient son souffle. Pour la première fois dans l'histoire de l'humanité, six êtres humains observent depuis l'espace une planète rocheuse potentiellement habitable, à 1 400 années-lumière de la Terre. Les capteurs atmosphériques confirment ce que personne n'osait espérer : une composition gazeuse compatible avec les conditions nécessaires à la vie telle que nous la connaissons.</p><p>Sur Terre, le Centre de Contrôle Aurora coordonne l'ensemble des communications en temps réel, malgré un délai de transmission incompressible de quarante-sept minutes entre l'Odyssey IV et la Terre. Chaque donnée reçue est analysée, vérifiée, et transmise à la communauté scientifique internationale. Le monde entier attend les premières images de la surface. Huit milliards de personnes, réunies pour la première fois autour d'une même question : qu'allons-nous trouver ?</p>",
+            "image": "medias/chrono/Regard.png"
+        },
+        {
+            "id": 3,
+            "date": "29/03/2079 14h32",
+            "titre": "premières images de Kepler-452c",
+            "soustitre": "Le premier live envoyé à la terre depuis Kepler-452c",
+            "texte": "<p>Le 29 mai 2079 à 14h32 TU, le Lieutenant Adrien Laurent et la Spécialiste Tapia Wong ont effectué la première transmission vidéo en direct depuis l'orbite de Kepler-452c. Quatre milliards de spectateurs un tiers de la population mondiale étaient connectés simultanément, faisant de ce moment l'événement médiatique le plus regardé de l'histoire de l'humanité.</p><p>Depuis le module d'observation de l'Odyssey IV, Laurent et Wong ont présenté les premières images de la surface de Kepler-452c captées en haute résolution. Derrière eux, visible à travers le hublot, la planète tournait lentement dans l'obscurité de l'espace. Bleue, brune, voilée de nuages fins. Vivante, peut-être.</p><p>La transmission a duré quarante-deux minutes. Quarante-deux minutes durant lesquelles le monde a retenu son souffle, suspendu aux mots de deux astronautes parlant depuis un endroit où aucun être humain ne s'était jamais trouvé. Aucun incident technique, aucune défaillance comme si l'univers lui-même avait choisi de se taire pour laisser l'humanité parler.</p>",
+            "image": "medias/chrono/orbite.png"
+        },
+        {
+            "id": 4,
+            "date": "29/03/2079 21h02",
+            "titre": "Le message privé du DR. Wong fuite",
+            "soustitre": "Le monde est ému face au message du DR. Wong pour sa famille.",
+            "texte": "<p>Le 29 mai 2079 à 21h02, un message privé de la Docteure Tapia Wong, destiné à sa famille restée sur Terre, a été intercepté et rendu public par un compte anonyme sur les réseaux sociaux. En quelques heures, le message avait été partagé plus de quarante millions de fois. Le CCA a choisi de ne pas le supprimer.</p><p>Dans ce message, Wong parlait de sa fille, âgée de sept ans au moment du lancement. Elle calculait à voix haute combien de centimètres elle avait dû grandir depuis deux ans. Elle demandait si elle aimait toujours les mêmes chansons. Elle disait qu'elle avait gardé une photo d'elle dans son casier de bord, juste à côté du hublot, pour qu'elle puisse voir les étoiles elle aussi.</p><p>Le monde, saturé de données scientifiques et de protocoles officiels, a redécouvert ce jour-là que derrière chaque chiffre de la mission Aurora, il y avait un être humain. Quelqu'un qui manquait à quelqu'un. Les réseaux sociaux se sont tus, brièvement. Puis ont recommencé à parler — mais différemment, plus doucement. Comme après une émotion qu'on n'avait pas prévue.</p>",
+            "image": "medias/chrono/message.png"
+        },
+        {
+            "id": 5,
+            "date": "30/03/2079 03h00",
+            "titre": "Tempête solaire",
+            "soustitre": "Une tempête solaire d'ampleur exceptionnel vient coupé une partie des communications",
+            "texte": "<p>Le 30 mai 2079 à 03h00, les systèmes de surveillance du Centre de Contrôle Aurora ont détecté une éruption solaire de classe X9 en direction de l'Odyssey IV. En moins de quarante minutes, le flux de particules chargées a atteint le vaisseau, provoquant une dégradation sévère des communications. Le signal principal a été perdu pendant deux heures et vingt-trois minutes.</p><p>Au CCA, les équipes de nuit ont immédiatement activé le protocole de communication d'urgence. Les tentatives de contact via les fréquences secondaires ont partiellement abouti à 04h42 TU — suffisamment pour confirmer que l'équipage était en sécurité et que les boucliers anti-radiations avaient tenu. Pas suffisamment pour échanger des données ou coordonner les opérations normalement.</p><p>Pendant deux heures et vingt-trois minutes, l'Odyssey IV a vogué seul, sans lien avec la Terre. L'équipage a géré la situation de manière autonome, conformément aux protocoles prévus. Lorsque le signal a été rétabli à 11h05, la Commandante Ripley a transmis un message, une seule phrase au CCA : tout le monde va bien.</p>",
+            "image": "medias/chrono/Solaire.png"
+        },
+        {
+            "id": 6,
+            "date": "30/03/2079 8h47",
+            "titre": "Découverte d'une fréquence anormal",
+            "soustitre": "Un signal électromagnétique anormal à été detecté sur la surface de Kepler-452c",
+            "texte": "<p>Le 30 mai 2079 à 08h47, les capteurs de l'Odyssey IV ont enregistré un signal électromagnétique d'origine inconnue en provenance de la surface de Kepler-452c. Fréquence non répertoriée dans les bases de données connues. Durée : trois minutes et quarante-deux secondes. Source localisée dans la vallée d'Aurelia, secteur 7. Le signal ne correspond à aucun phénomène naturel identifié.</p><p>Le Dr. Patel a immédiatement interrompu ses travaux en cours pour analyser les données brutes. Les premières conclusions sont sans appel : le signal présente une structure interne trop régulière pour être le produit d'une activité géologique ou atmosphérique classique. Il ne s'agit pas d'une interférence. Il ne s'agit pas d'un artefact de mesure. La fréquence est réelle, localisée, et répétable.</p><p>Au CCA, la transmission a été reçue avec quarante-sept minutes de décalage. Les équipes scientifiques ont travaillé toute la nuit pour croiser les données avec les archives des missions précédentes et les relevés atmosphériques de 2047. Aucun précédent. Aucune explication. Une seule certitude : quelque chose, sur la surface de Kepler-452c, émet un signal que personne n'a jamais entendu avant.</p>",
+            "image": "medias/chrono/signal.png"
+        },
+        {
+            "id": 7,
+            "date": "30/03/2079 16h01",
+            "titre": "EVA en direct. Secteur 7",
+            "soustitre": "Laurent et Wong découvrent une formation cristalline bioluminescente à 200 mètres de leur point d'atterrissage.",
+            "texte": "<p>Le 30 mai 2079 à 16h01, le Lieutenant Adrien Laurent et la Spécialiste Tapia Wong ont entamé leur sortie extravéhiculaire en direction du secteur 7 de la vallée d'Aurelia — source du signal électromagnétique anormal détecté quelques heures plus tôt. La visibilité était correcte, le sol stable. Les conditions idéales pour une première exploration de terrain.</p><p>À 16h23 TU, Laurent a interrompu son compte-rendu habituel. À deux cents mètres devant eux, quelque chose reflétait la lumière de l'étoile de manière inhabituelle. Pas rocheux. Pas minéral au sens classique du terme. Les deux astronautes ont continué d'avancer, lentement, en silence. La transmission audio au CCA est restée ouverte. Personne n'a parlé pendant quatre minutes et dix-sept secondes.</p><p>Puis Laurent a transmis ces mots, qui sont depuis entrés dans l'histoire : « C'est une formation cristalline. Jamais vu ça. Elle est translucide, haute d'environ 3 mètres, et elle pulse. Faiblement, mais de manière régulière. Patel va perdre la tête quand il verra les images. » Au Centre de Contrôle Aurora, les équipes ont reçu la transmission quarante-sept minutes plus tard. Personne n'était rentré chez soi.</p>",
+            "image": "medias/chrono/monolithe.png"
+        },
+        {
+            "id": 8,
+            "date": "30/03/2079 19h00",
+            "titre": "Crise de désinformation — #AuroraAlien",
+            "soustitre": "Manipulation interne du classement et propagation d'une rumeur extraterrestre mondiale.",
+            "texte": "<p>Le 30 mai 2079 à 19h43 TU, les systèmes de contrôle du CCA ont détecté une anomalie critique dans les données de scoring : plus de 3 600 points frauduleux avaient été injectés dans le classement par une cellule de communication identifiée. En parallèle, le hashtag #AuroraAlien entrait en tendance mondiale, relayé par quatre médias télévisés nationaux. Un compte complotiste affirmait que le CCA dissimulait une forme de vie extraterrestre à bord de l'Odyssey IV. La rumeur se propageait plus vite que n'importe quelle réponse officielle ne pouvait la rattraper.</p><p>La mère du Dr. Silva a été harcelée à son domicile par des journalistes. Le standard du CCA a enregistré une hausse de deux mille pour cent des appels entrants. Une vidéo deepfake montrant un prétendu être non identifié à bord de l'Odyssey IV circulait sur toutes les plateformes. Le Centre de Contrôle Aurora activait le protocole NOVA et le centre de crise officiel.</p><p>La réponse est venue de là où on ne l'attendait pas forcément — de l'espace. La Commandante Ripley a transmis un message direct au CCA, reçu à 20h31 TU : « On vient de voir le hashtag #AuroraAlien. C'est n'importe quoi. Nous avons trouvé une structure cristalline, pas des petits hommes verts. Et pour la cellule qui a triché... on est déçus. L'équipage est unanime : restez factuel, restez intègre. On compte sur vous. » Quarante-sept minutes de délai. Pas une de trop.</p>",
+            "image": "medias/chrono/fake.png"
+        },
+        {
+            "id": 9,
+            "date": "31/03/2079 13h00",
+            "titre": "Message final de l'équipage",
+            "soustitre": "L'Odyssey IV s'adresse une dernière fois à la Terre avant de débuter l'exploration de surface.",
+            "texte": "<p>Le 31 mai 2079 à 05h00 TU, quelques heures avant la présentation officielle de la mission au monde, l'équipage de l'Odyssey IV au complet a transmis un message non protocolaire au Centre de Contrôle Aurora. Aucun ordre du jour. Aucune donnée scientifique. Juste six voix, depuis l'orbite de Kepler-452c, qui parlaient à ceux qui les avaient accompagnés depuis la Terre.</p><p>« Dans quelques heures, vous allez présenter notre histoire au monde. On voulait vous dire... merci. Merci de raconter ce qu'on vit. Merci de nous défendre quand les rumeurs s'emballent. Merci de nous rappeler pourquoi on est ici quand le doute s'installe. Vous êtes notre voix, notre lien avec la Terre. Sans vous, cette mission ne serait que des données dans un serveur. Avec vous, c'est une histoire humaine. »</p><p>Le message s'est terminé par ces mots, transmis depuis l'orbite d'une planète que personne n'avait jamais foulée : « À bientôt, la Terre. On a une planète à explorer. » Au Centre de Contrôle Aurora, la salle de crise est restée silencieuse quarante-sept minutes — le temps que le message voyage. Puis quelqu'un a applaudi. Et tout le monde a suivi.</p>",
+            "image": "medias/chrono/last.png"
+        }
+    ]
+}

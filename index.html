@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/tempeteSolaire.css">
     <link rel="stylesheet" href="css/alerte.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="icon" type="image/png" href="medias/logoNav.png">
     <title>Page d'accueil Mass Truitass Effect</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -47,9 +48,11 @@
             <a href="photos.html">Galerie photos</a>
         </div>
     </nav>
-<div class="bandeau-crise">
-    <a href="centreCrise.html">Situation de crise d'urgence en cours accéder au centre de crise officiel</a>
-</div>
+
+    <div class="bandeau-crise">
+        <a href="centreCrise.html">Situation de crise d'urgence en cours — accéder au centre de crise officiel</a>
+    </div>
+
     <header>
         <h1>Mass Truitass Effect</h1>
         <h2>Projet Aurora</h2>
@@ -83,6 +86,19 @@
         </div>
     </div>
 
+    <!-- TIMELINE -->
+    <section class="timeline-section">
+        <div class="timeline-contenu" id="timeline-contenu">
+            <div class="timeline-placeholder">
+                <p>Sélectionnez un événement sur la chronologie.</p>
+            </div>
+        </div>
+        <div class="timeline-droite">
+            <div class="timeline-ligne"></div>
+            <div class="timeline-points" id="timeline-points"></div>
+        </div>
+    </section>
+
     <div class="alerte">
         <h3>Les dernières alertes en direct.</h3>
     </div>
@@ -104,7 +120,7 @@
     <script src="js/tempeteSolaire.js"></script>
     <script src="js/orbite.js"></script>
     <script src="js/alertes.js"></script>
-</body>
+    <script src="js/timeline.js"></script>
 
 </body>
 
