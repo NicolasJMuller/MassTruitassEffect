@@ -133,19 +133,35 @@
     color: #555;
     letter-spacing: 1px;
 }
-
 @media (max-width: 768px) {
-    .crise-header h1 {
-        font-size: 1.4rem;
+    h1 {
+        font-size: 2em;
     }
 
-    .preuve-carte {
+    .texte {
+        width: 90%;
+    }
+
+    .monolithe-section {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        padding: 20px 5%;
+        min-height: auto;
+        gap: 20px;
     }
 
-    .preuve-lien {
+    .col-canvas {
+        order: -1;
         width: 100%;
-        text-align: center;
+        justify-content: center;
+    }
+
+    #monolithe-canvas {
+        width: 200px;
+        height: 350px;
+    }
+
+    .col-texte {
+        width: 100%;
     }
 }
