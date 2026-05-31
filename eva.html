@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/eva.css">
     <link rel="icon" type="image/png" href="medias/logoNav.png">
-    <title>Page d'accueil Mass Truitass Effect</title>
+    <title>Direct de l'EVA</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
@@ -17,42 +17,43 @@
 <body>
 
     <nav>
-    <div class="nav-gauche">
-        <a href="aPropos.html">À propos</a>
-        <a href="equipage.html">L'équipage</a>
-    </div>
-    <div class="nav-centre">
-        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-    </div>
-    <div class="nav-droite">
-        <div class="dropdown">
-            <button class="dropdown-btn">En direct</button>
-            <div class="dropdown-menu">
-                <a href="journal.html">Journal de bord</a>
-                <a href="eva.html">Suivi EVA</a>
-            </div>
+        <div class="nav-gauche">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
         </div>
-        <a href="photos.html">Galerie photos</a>
+        <div class="nav-centre">
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        </div>
+        <div class="nav-droite">
+            <div class="dropdown">
+                <button class="dropdown-btn">En direct</button>
+                <div class="dropdown-menu">
+                    <a href="journal.html">Journal de bord</a>
+                    <a href="eva.html">Suivi EVA</a>
+                    <a href="decouverte.html">Découverte</a>
+                </div>
+            </div>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <div class="nav-mobile" id="navLiens">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+            <a href="journal.html">Journal de bord</a>
+            <a href="eva.html">Suivi EVA</a>
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+    </nav>
+
+    <h1>Position en direct du EVA</h1>
+
+    <div class="radar-container">
+        <img id="radar-img" src="medias/suiviDirect/radar.png" alt="Radar">
+        <canvas id="radar-canvas"></canvas>
     </div>
-    <button class="burger" onclick="toggleMenu()">☰</button>
-    <div class="nav-mobile" id="navLiens">
-        <a href="aPropos.html">À propos</a>
-        <a href="equipage.html">L'équipage</a>
-        <a href="journal.html">Journal de bord</a>
-        <a href="eva.html">Suivi EVA</a>
-        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-        <a href="photos.html">Galerie photos</a>
-    </div>
-</nav>
 
-<h1>Position en direct du EVA</h1>
-
-<div class="radar-container">
-    <img id="radar-img" src="medias/suiviDirect/radar.png" alt="Radar">
-    <canvas id="radar-canvas"></canvas>
-</div>
-
-
+    <figure><img class="imgInfo" src="medias/suiviDirect/info.png" alt="Information données en direct"></figure>
     <footer>
         <p>© 2079 Mass Truitass Effect tous droits réservés.</p>
     </footer>
@@ -63,7 +64,7 @@
         }
     </script>
 
-<script src="js/radar.js"></script>
+    <script src="js/radar.js"></script>
 </body>
 
 </body>

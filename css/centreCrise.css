@@ -1,0 +1,151 @@
+.crise-header {
+    background-color: #8b0000;
+    padding: 40px 5%;
+    text-align: center;
+    border-bottom: 2px solid #ff0000;
+}
+
+.crise-label {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: #ffaaaa;
+    margin: 0 0 10px 0;
+}
+
+.crise-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.crise-date {
+    font-size: 0.8rem;
+    color: #ffaaaa;
+    margin: 0;
+}
+
+.crise-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.crise-main h2 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Démenti */
+.dementi-carte {
+    border-left: 3px solid #ff0000;
+    padding: 20px 24px;
+    background-color: #111;
+    border-radius: 0 8px 8px 0;
+}
+
+.dementi-carte h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+}
+
+.dementi-carte p {
+    margin: 0 0 12px 0;
+    color: #aaa;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.dementi-carte .horodatage {
+    font-size: 0.75rem;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+/* Preuves */
+.preuve-carte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: #111;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    gap: 20px;
+}
+
+.preuve-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+}
+
+.preuve-info p {
+    margin: 0 0 8px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.preuve-info .horodatage {
+    font-size: 0.75rem;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.preuve-lien {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #fff;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.preuve-lien:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Vidéo */
+.video-placeholder {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 60px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.video-placeholder p {
+    color: #aaa;
+    margin: 0 0 10px 0;
+}
+
+.video-horodatage {
+    font-size: 0.75rem;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .crise-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .preuve-carte {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .preuve-lien {
+        width: 100%;
+        text-align: center;
+    }
+}

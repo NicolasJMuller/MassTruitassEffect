@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicolas Muller">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/centreCrise.css">
+    <link rel="icon" type="image/png" href="medias/logoNav.png">
+    <title>Centre de crise</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-gauche">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+        </div>
+        <div class="nav-centre">
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        </div>
+        <div class="nav-droite">
+            <div class="dropdown">
+                <button class="dropdown-btn">En direct</button>
+                <div class="dropdown-menu">
+                    <a href="journal.html">Journal de bord</a>
+                    <a href="eva.html">Suivi EVA</a>
+                    <a href="decouverte.html">Découverte</a>
+                </div>
+            </div>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <div class="nav-mobile" id="navLiens">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+            <a href="journal.html">Journal de bord</a>
+            <a href="eva.html">Suivi EVA</a>
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+    </nav>
+
+    <div class="crise-header">
+        <p class="crise-label">CENTRE DE CRISE OFFICIEL</p>
+        <h1>Réponse aux informations non vérifiées</h1>
+        <p class="crise-date">Dernière mise à jour : 2079-05-30 | 23h00</p>
+    </div>
+
+    <main class="crise-main">
+
+        <section class="section-dementi">
+            <h2>Démenti officiel</h2>
+            <div id="dementi-container"></div>
+        </section>
+
+        <section class="section-preuves">
+            <h2>Preuves vérifiées</h2>
+            <div id="preuves-container"></div>
+        </section>
+
+        <section class="section-video">
+            <h2>Message de l'équipage</h2>
+            <div class="video-placeholder">
+                <p>Vidéo en cours de transmission depuis l'Odyssey IV.</p>
+                <span class="video-horodatage">2079-05-30 | 23h00</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2079 Mass Truitass Effect — Cellule de communication du Centre de Contrôle Aurora. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLiens').classList.toggle('actif');
+        }
+    </script>
+    <script src="js/crise.js"></script>
+
+</body>
+</html>

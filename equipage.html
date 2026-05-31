@@ -17,34 +17,35 @@
 
 <body>
 
- <nav>
-    <div class="nav-gauche">
-        <a href="aPropos.html">À propos</a>
-        <a href="equipage.html">L'équipage</a>
-    </div>
-    <div class="nav-centre">
-        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-    </div>
-    <div class="nav-droite">
-        <div class="dropdown">
-            <button class="dropdown-btn">En direct</button>
-            <div class="dropdown-menu">
-                <a href="journal.html">Journal de bord</a>
-                <a href="eva.html">Suivi EVA</a>
-            </div>
+    <nav>
+        <div class="nav-gauche">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
         </div>
-        <a href="photos.html">Galerie photos</a>
-    </div>
-    <button class="burger" onclick="toggleMenu()">☰</button>
-    <div class="nav-mobile" id="navLiens">
-        <a href="aPropos.html">À propos</a>
-        <a href="equipage.html">L'équipage</a>
-        <a href="journal.html">Journal de bord</a>
-        <a href="eva.html">Suivi EVA</a>
-        <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
-        <a href="photos.html">Galerie photos</a>
-    </div>
-</nav>
+        <div class="nav-centre">
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        </div>
+        <div class="nav-droite">
+            <div class="dropdown">
+                <button class="dropdown-btn">En direct</button>
+                <div class="dropdown-menu">
+                    <a href="journal.html">Journal de bord</a>
+                    <a href="eva.html">Suivi EVA</a>
+                    <a href="decouverte.html">Découverte</a>
+                </div>
+            </div>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <div class="nav-mobile" id="navLiens">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+            <a href="journal.html">Journal de bord</a>
+            <a href="eva.html">Suivi EVA</a>
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+    </nav>
 
 
     <script>
@@ -66,32 +67,32 @@
     </footer>
 
     <div class="lightbox" id="lightbox" onclick="fermerLightbox()">
-    <span class="lightbox-fermer">✕</span>
-    <img id="lightbox-img" src="" alt="">
-    <p id="lightbox-titre"></p>
-</div>
+        <span class="lightbox-fermer">✕</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-titre"></p>
+    </div>
 
-<script>
-    function toggleMenu() {
-        document.getElementById('navLiens').classList.toggle('actif');
-    }
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLiens').classList.toggle('actif');
+        }
 
-    function ouvrirLightbox(src, titre) {
-        document.getElementById('lightbox-img').src = src;
-        document.getElementById('lightbox-titre').textContent = titre;
-        document.getElementById('lightbox').classList.add('actif');
-    }
+        function ouvrirLightbox(src, titre) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-titre').textContent = titre;
+            document.getElementById('lightbox').classList.add('actif');
+        }
 
-    function fermerLightbox() {
-        document.getElementById('lightbox').classList.remove('actif');
-    }
+        function fermerLightbox() {
+            document.getElementById('lightbox').classList.remove('actif');
+        }
 
-    fetch('equipage.json')
-        .then(response => response.json())
-        .then(photos => {
-            const galerie = document.getElementById('galerie');
-            photos.forEach(photo => {
-                galerie.innerHTML += `
+        fetch('equipage.json')
+            .then(response => response.json())
+            .then(photos => {
+                const galerie = document.getElementById('galerie');
+                photos.forEach(photo => {
+                    galerie.innerHTML += `
                     <div class="carte" onclick="ouvrirLightbox('${photo.fichier}', '${photo.titre}')">
                         <h3>${photo.titre}</h3>
                         <img src="${photo.fichier}" alt="${photo.titre}">
@@ -99,11 +100,11 @@
                         <p class="date">${photo.date} | ${photo.heure}</p>
                     </div>
                 `;
+                });
             });
-        });
-</script>
-</script>
-<script src="js/tempeteSolaire.js" defer></script>
+    </script>
+    </script>
+    <script src="js/tempeteSolaire.js" defer></script>
 </body>
 
 </html>

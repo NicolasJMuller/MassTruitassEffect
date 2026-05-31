@@ -1,0 +1,36 @@
+{
+    "dementi": [
+        {
+            "id": 1,
+            "titre": "Aucune forme de vie extra-terrestre détectée à bord de l'Odyssey IV",
+            "description": "La vidéo en circulation montrant un prétendu être non identifié à bord de l'Odyssey IV est un montage numérique. Les systèmes de surveillance internes du vaisseau, actifs en continu, n'ont enregistré aucune présence non répertoriée. L'équipage est en bonne santé et en sécurité.",
+            "horodatage": "2079-05-30 | 17h42"
+        }
+    ],
+    "preuves": [
+        {
+            "id": 1,
+            "dementi_id": 1,
+            "titre": "Découverte scientifique majeure la structure cristalline bioluminescente",
+            "description": "Adrien Laurent et Tapia Wong ont découvert une structure d'origine inconnue bioluminescente qui émet de la lumière toutes les 47 secondes précisément. Elle génère un champ électromagnétique faible mais mesurable.",
+            "horodatage": "2079-05-30 | 17h50",
+            "lien": "medias/COMMUNIQUE.pdf"
+        },
+        {
+            "id": 2,
+            "dementi_id": 1,
+            "titre": "Nous répondons à vos questions.",
+            "description": "FAQ avec Elen Ripley, capitaine de l'Odyssey IV",
+            "horodatage": "2079-05-30 | 18h15",
+            "lien": "medias/FAQ.pdf"
+        },
+        {
+            "id": 3,
+            "dementi_id": 1,
+            "titre": "Démenti #AuroraAlien",
+            "description": "Message démentant les accusations portées à l'écart de l'Odyssey IV, vis à vis de la vie extra-terrestre",
+            "horodatage": "2079-05-31 | 02h13",
+            "lien": "#"
+        }
+    ]
+}

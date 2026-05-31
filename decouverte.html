@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicolas Muller">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/decouverte.css">
+    <link rel="icon" type="image/png" href="medias/logoNav.png">
+    <title>Les découvertes</title>
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+}
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-gauche">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+        </div>
+        <div class="nav-centre">
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+        </div>
+        <div class="nav-droite">
+            <div class="dropdown">
+                <button class="dropdown-btn">En direct</button>
+                <div class="dropdown-menu">
+                    <a href="journal.html">Journal de bord</a>
+                    <a href="eva.html">Suivi EVA</a>
+                    <a href="decouverte.html">Découverte</a>
+                </div>
+            </div>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <div class="nav-mobile" id="navLiens">
+            <a href="aPropos.html">À propos</a>
+            <a href="equipage.html">L'équipage</a>
+            <a href="journal.html">Journal de bord</a>
+            <a href="eva.html">Suivi EVA</a>
+            <a href="index.html"><img src="medias/logo2Nav.png" alt="logo MTE"></a>
+            <a href="photos.html">Galerie photos</a>
+        </div>
+    </nav>
+
+    <h1>Découverte scientifique majeure</h1>
+    <h2>La structure cristalline bioluminescente</h2>
+
+    <div class="texte">
+        <p>
+            Aujourd'hui, samedi 30 mai 2079 à 16h01, Adrien Laurent et Tapia Wong ont découvert une structure
+            d'origine inconnue bioluminescente qui émet de la lumière toutes les 47 secondes précisément.
+            Elle génère un champ électromagnétique faible mais mesurable. Ce n'est pas un artefact.
+            Ce n'est pas un bug. C'est quelque chose de fondamentalement nouveau.
+        </p>
+    </div>
+
+    <div class="monolithe-section">
+        <div class="col-texte">
+            <h3>Description factuel</h3>
+            <ul>
+  <li>Hauteur : 3,2 mètres</li>
+  <li>Matière : translicide / crystalline</li>
+  <li>Émission : bioluminescente</li>
+  <li>Sommet : Obtus</li>
+  <li>Surfaces : alvéoles et légères gondolations / gonflement lumineux sur une face</li>
+</ul>
+            <h3>Déclarations de l'équipage</h3>
+            <p><strong>Dr. Sanjay Patel, chef scientifique de la mission </strong> : « Nous sommes face à un phénomène
+                naturel inexpliqué dont aucun modèle géologique ou physique connu ne permet, à ce stade, de rendre
+                compte. La rigueur scientifique exige que nous suspendions tout jugement et que nous laissions les
+                analyses parler. » <br>
+                <strong>Commandante Ellen Ripley </strong> : « L'équipage maintient ses protocoles opérationnels. Cette
+                découverte scientifique majeure est traitée avec le sérieux et la prudence qu'elle impose. Nous
+                procédons méthodiquement. »
+            </p>
+        </div>
+
+        <div class="col-canvas">
+            <canvas id="monolithe-canvas"></canvas>
+        </div>
+
+        <div class="col-texte">
+            <h3> Mesures de précaution</h3>
+            <p> Dans l'attente des résultats d'analyse, un périmètre de sécurité a été établi autour de la structure.
+                Les effets d'une exposition prolongée au champ électromagnétique émis font l'objet d'un suivi médical
+                continu par le Dr. Elena Silva.</p>
+
+            <h3>Prochaines étapes</h3>
+            <p>Les analyses se dérouleront en trois phases : prélèvements de surface et spectroscopie dans les
+                prochaines 24 heures, analyse du champ électromagnétique sur une période de 72 heures, et modélisation
+                complète de la structure dans les plus brefs délais. L'ensemble des données sera transmis en temps réel
+                aux institutions scientifiques partenaires du programme Aurora.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2079 Mass Truitass Effect tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLiens').classList.toggle('actif');
+        }
+    </script>
+    <script type="module" src="js/monolithe.js"></script>
+
+</body>
+
+</html>

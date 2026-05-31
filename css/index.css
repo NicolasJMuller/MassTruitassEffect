@@ -1,3 +1,22 @@
+
+.bandeau-crise {
+    background-color: #8b0000;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.bandeau-crise a {
+    font-family: 'Mirza', cursive;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+/* crise au dessus  */
+
+
+
 body {
     overflow-x: hidden;
 }
