@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "statut": "confidentiel",
+        "statut": "public",
         "titre": "Détection signal électromagnétique anormal.",
         "description": "Détection signal électromagnétique anormal. Source : Vallée d'Aurelia, secteur 7. Durée : 3 min 42s. Fréquence : non répertoriée dans les bases de données connues.",
         "date": "2079-05-30",
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "statut": "confidentiel",
+        "statut": "public",
         "titre": "Détection signal électromagnétique anormal.",
         "description": "Détection signal électromagnétique anormal. Source : Vallée d'Aurelia, secteur 7. Durée : 3 min 42s. Fréquence : non répertoriée dans les bases de données connues.",
         "date": "2079-05-30",
